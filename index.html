@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./sass/custom.css">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <!-- Barra de navegacion -->
+            <nav class="col-12 navbar navbar-expand-md mb-5 pb-5 mt-4">
+                <div class="container">
+                    <a href="#" class="col-6 navbar-brand"><img src="./Imagenes/logo-bookmark.svg" alt=""></a>
+                    <button type="button" class="navbar-toggler"data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                        <span class="navbar-toggler"><img src="./Imagenes/icon-hamburger.svg" alt=""></span>
+                    </button>
+                    <div id="MenuNavegacion" class="collapse navbar-collapse">
+                        <ul class="col-6 fs-6 mt-2 navbar-nav texto-secundario">
+                            <li class="nav-item"><a class="nav-link disabled" href="#">FEATURES</a></li>
+                            <li class="nav-item"><a class="nav-link disabled" href="#">PRICING</a></li>
+                            <li class="nav-item"><a class="nav-link disabled" href="#">CONTACT</a></li>
+                            <li class="nav-item"><a class="nav-link boton px-4 text-light bg-secondary" href="#">LOGIN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="col-lg-12 row pt-5">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <h1 class="pb-2 fw-bold"> A Simple Bookmark Manager</h1>
+                    <p class="texto-secundario pb-2">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free. </p>
+                    <button class="m-2 btn btn-primary">Get It on Chrome</button>
+                    <button class="btn btn-light">Get I on Firefox</button>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <img src="./Imagenes/illustration-hero.svg"  alt="" >
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
