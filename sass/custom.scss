@@ -1,0 +1,60 @@
+// Esto es el encabezado
+$primary: #5265E1;
+$secondary: #FA5959;
+
+html, body {
+overflow-x: hidden;
+}
+.col-lg-7 {
+    position:relative;
+    left: 0;
+    top: 0;
+}
+.col-6.fs-6.mt-2.navbar-nav.texto-secundario {
+    letter-spacing: 3px;
+}
+.boton {
+    border-radius: 5px;
+}
+.col-lg-7::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background-color: #5168df;
+    width: 500px;
+    height: 350px;
+    z-index: -1;
+    border-radius: 0px 0px 0px 200px;
+}
+.col-lg-12.row.pt-5 {
+    justify-content:center;
+    align-items:center;
+}
+
+@media (max-width: 420px) {
+    .col-lg-5.col-md-12.col-sm-12 {
+    padding-top: 50px;
+    }
+}
+@media (max-width: 768px) {
+    .col-lg-7.col-md-12.col-sm-12 img {
+        width: 100%;
+    }
+    .col-lg-7::before {
+        transform: scale(.5);
+        top: 20%;
+        left: 10%;
+    }
+}
+@media (max-width: 1024px) {
+    .col-lg-12.row.pt-5{
+        flex-direction: column-reverse;
+    }
+    div.col-lg-5.col-md-12 {
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+@import "../node_modules/bootstrap/scss/bootstrap"
