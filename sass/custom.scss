@@ -1,11 +1,10 @@
 // Esto es el encabezado
 $primary: #5265E1;
 $secondary: #FA5959;
-
 html, body {
 overflow-x: hidden;
 }
-.col-lg-7 {
+.col-lg-7,.col-lg-6.col-md-12.mt-5.divImg2 {
     position:relative;
     left: 0;
     top: 0;
@@ -32,21 +31,88 @@ overflow-x: hidden;
     justify-content:center;
     align-items:center;
 }
-
-@media (max-width: 420px) {
+// Ejercicio 2
+.contenido {
+    justify-content:center;
+    align-items:center;
+}
+.texto-secundario.mt-4.mx-3 {
+    margin: 0 150px;
+}
+.divImg2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: -25%;
+    background-color: #5168df;
+    width: 500px;
+    height: 350px;
+    z-index: -1;
+    border-radius: 0px 0px 200px 0px;
+}
+.nav-item.show .nav-link {
+     border: 3px transparent !important;
+ }
+.nav-link,.nav-tabs:focus .nav-link:focus {
+    border: 3px transparent !important;
+}
+.nav-link.active {
+    border-bottom:3px solid red !important;
+}
+.nav-link:hover{
+    color: red !important;
+}
+.texto-secundario.mt-4.w-50{
+    margin-inline:auto ;
+}
+ ul.nav {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);   
+    margin-inline: auto;
+    width: 55%; 
+ }
+ p.texto-secundario.mt-4{
+     margin-inline: auto;
+ }
+@media (max-width: 500px) {
     .col-lg-5.col-md-12.col-sm-12 {
-    padding-top: 50px;
+        padding-top: 50px;
+    }
+    ul.nav{
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
+        border-bottom:none;
+    }
+    .nav-link.active {
+        border-bottom: 3px solid red !important;
+        width: 60%;        
+    }
+    .nav-item{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+        width: 100%;
+    }
+    .nav-link.py-3.px-4{
+        margin-inline: auto;
+        text-align: center;
     }
 }
-@media (max-width: 768px) {
-    .col-lg-7.col-md-12.col-sm-12 img {
+@media (max-width: 800px) {
+    .col-lg-7.col-md-12.col-sm-12 img,.divImg2 img{
         width: 100%;
     }
     .col-lg-7::before {
-        transform: scale(.5);
-        top: 20%;
+        transform: scale(.60);
+        top: 10%;
         left: 10%;
     }
+    .divImg2::before{
+        transform: scale(.60);
+        top: 15%;
+        left: -40%;
+    }
+    ul.nav{
+        width: 100%;
+    }
+    
 }
 @media (max-width: 1024px) {
     .col-lg-12.row.pt-5{
@@ -54,6 +120,13 @@ overflow-x: hidden;
     }
     div.col-lg-5.col-md-12 {
         margin-top: 50px;
+        text-align: center;
+    }
+    .col-lg-6.col-md-12.mt-5{
+        text-align: center;
+    }
+    .col-lg-6.col-md-12.col-sm-12.mt-5 h2 {
+        margin-top: 15% !important;
         text-align: center;
     }
 }
