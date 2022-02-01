@@ -1,9 +1,11 @@
 // Esto es el encabezado
 $primary: #5265E1;
 $secondary: #FA5959;
-
 html, body {
 overflow-x: hidden;
+}
+p {
+    color: #cccdd2;
 }
 .col-lg-7,.col-lg-6.col-md-12.mt-5.divImg2 {
     position:relative;
@@ -54,7 +56,7 @@ overflow-x: hidden;
 }
 .nav-item.show .nav-link {
      border: 3px transparent !important;
- }
+}
 .nav-link,.nav-tabs:focus .nav-link:focus {
     border: 3px transparent !important;
 }
@@ -68,17 +70,15 @@ overflow-x: hidden;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);   
     margin-inline: auto;
     width: 55%; 
- }
+}
  p.texto-secundario.mt-4 {
      margin-inline: auto;
- }
+}
  .texto-secundario {
     margin-inline: auto;
- }
+}
 //  cards
-
-.tarjeta{
-    margin-top: 2% !important;
+.tarjeta {
     border-style: none;
     border-color: rgba(19, 18, 18, 0.205);
     border-width: 3px;
@@ -88,37 +88,36 @@ overflow-x: hidden;
     background-repeat: no-repeat;     
     box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.082); 
 }
-.tarjetaUno {
-    margin-top: 5% !important;
-    border-style: none;
-    border-color: rgba(19, 18, 18, 0.205);
-    border-width: 3px;
-    border-radius: 4%;
-    background: url(../Imagenes/bg-dots.svg);
-    background-position: 25% 72%;
-    background-repeat: no-repeat; 
-    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.082);  
+.row.justify-content-center.mt-5:nth-child(1) {
+    margin-top: 2% !important;
 }
-.tarjetaDos{
-    margin-top: 8% !important;
-    border-style: none;
-    border-color: rgba(19, 18, 18, 0.205);
-    border-width: 3px;
-    border-radius: 4%;
-    background: url(../Imagenes/bg-dots.svg);
-    background-position: 25% 72%;
-    background-repeat: no-repeat; 
-    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.082);  
+.row.justify-content-center.mt-5:nth-child(2) {
+    margin-top: 5% !important; 
+}
+.row.justify-content-center.mt-5:nth-child(3) {
+    margin-top: 8% !important; 
 }
 .tarjetaCuerpo {
     margin-top: 35px;
-    text-align: center;
-    
+    text-align: center;    
 }
-.imagenTargeta{
-margin-top: 7%;
-position: relative;
-left: 80px;
+.imagenTargeta {
+    margin-top: 7%;
+    position: relative;
+    left: 80px;
+}
+// acordeon
+.accordion .accordion-button::after {
+    background-image: url(../Imagenes/icon-arrow.svg);
+}
+.accordion {
+    margin-inline: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.198);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116); ;
+    margin-bottom: 5%;
+}
+.accordion .accordion-button:focus {
+    border: transparent;
 }
 @media (max-width: 500px) {
     .col-lg-5.col-md-12.col-sm-12 {
