@@ -1,6 +1,7 @@
 // Esto es el encabezado
 $primary: #5265E1;
 $secondary: #FA5959;
+$danger: #242946;
 html, body {
 overflow-x: hidden;
 }
@@ -58,13 +59,31 @@ p {
      border: 3px transparent !important;
 }
 .nav-link,.nav-tabs:focus .nav-link:focus {
-    border: 3px transparent !important;
+    border-color: transparent !important;
+}
+.nav .nav-tabs .nav-link:hover, .nav .nav-tabs .nav-link:focus {
+    border-color: transparent !important;
 }
 .nav-link.active {
     border-bottom:3px solid red !important;
 }
+// hovers
 .nav-link:hover {
     color: red !important;
+}
+.m-2.btn.btn-primary:hover, .btn.btn-primary:hover, .btn.btn-primary.mt-5:hover {
+    background-color: white;
+    color:#5265E1 ;
+    border: 2px solid #5265E1;
+}
+.btn.btn-light:hover{
+    background-color: white;
+    color: rgb(98, 97, 97);
+    border: 2px solid rgb(98, 97, 97);
+}
+.nav-link.btn.btn-secondary.px-4.ms-4.text-light:hover {
+    background-color: white;
+    border: 1px solid red !important;
 }
  ul.nav {
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);   
@@ -88,13 +107,13 @@ p {
     background-repeat: no-repeat;     
     box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.082); 
 }
-.row.justify-content-center.mt-5:nth-child(1) {
+.tarjeta:nth-child(1) {
     margin-top: 2% !important;
 }
-.row.justify-content-center.mt-5:nth-child(2) {
+.tarjeta:nth-child(2) {
     margin-top: 5% !important; 
 }
-.row.justify-content-center.mt-5:nth-child(3) {
+.tarjeta:nth-child(3) {
     margin-top: 8% !important; 
 }
 .tarjetaCuerpo {
@@ -117,7 +136,12 @@ p {
     margin-bottom: 5%;
 }
 .accordion .accordion-button:focus {
-    border: transparent;
+    box-shadow: none;
+}
+.col-12.justify-content-center .btn.btn-primary {
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
 }
 @media (max-width: 500px) {
     .col-lg-5.col-md-12.col-sm-12 {
