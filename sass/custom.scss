@@ -68,7 +68,7 @@ p {
     border-bottom:3px solid red !important;
 }
 // hovers
-.nav-link:hover {
+.nav-link:hover, .accordion-button.collapsed:hover {
     color: red !important;
 }
 .m-2.btn.btn-primary:hover, .btn.btn-primary:hover, .btn.btn-primary.mt-5:hover {
@@ -81,7 +81,7 @@ p {
     color: rgb(98, 97, 97);
     border: 2px solid rgb(98, 97, 97);
 }
-.nav-link.btn.btn-secondary.px-4.ms-4.text-light:hover {
+.nav-link.btn.btn-secondary.px-4.ms-4.text-light:hover, .btn.btn-secondary.text-light.ms-3:hover {
     background-color: white;
     border: 1px solid red !important;
 }
@@ -89,12 +89,6 @@ p {
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);   
     margin-inline: auto;
     width: 55%; 
-}
- p.texto-secundario.mt-4 {
-     margin-inline: auto;
-}
- .texto-secundario {
-    margin-inline: auto;
 }
 //  cards
 .tarjeta {
@@ -129,6 +123,10 @@ p {
 .accordion .accordion-button::after {
     background-image: url(../Imagenes/icon-arrow.svg);
 }
+.accordion .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: black;
+}
 .accordion {
     margin-inline: auto;
     border-top: 1px solid rgba(0, 0, 0, 0.198);
@@ -142,6 +140,10 @@ p {
     display: block;
     width: fit-content;
     margin-inline: auto;
+}
+// pie de pagina
+.mb-5.pb-4.mt-5.d-flex.w-50, p.texto-secundario.mt-4, .texto-secundario {
+margin-inline: auto;
 }
 @media (max-width: 500px) {
     .col-lg-5.col-md-12.col-sm-12 {

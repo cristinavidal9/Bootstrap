@@ -148,12 +148,12 @@
                   </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                         What about other Chromium browser?
                       </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
                     </div>
                 </div>
@@ -169,31 +169,27 @@
         <div class="container">
           <div class="text-center">
             <p class="text-light">35.000+ ALREADY JOINED</p>
-            <h3 class="text-light"> Stay up-to-date with what we're doing</h3>
+            <h3 class="text-light fs-1"> Stay up-to-date with what<br>we're doing</h3>
           </div>
-          <form class="d-flex justify-content-center">
-            <div class="mb-3">
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <form action="/action_page.php" class="needs-validation">
+            <div class="mb-5 pb-4 mt-5 d-flex w-50">
+              <input type="email" placeholder="Enter your email adress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-tooltip">Please fill out this field.</div>
+              <button type="submit" class="px-4 py-3 fs-5 btn btn-secondary text-light ms-3 w-50">Contact us</button>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            
           </form>
         </div>
-        <div class="bg-danger pt-5 col-12 d-flex row">
-          <a href="#" class="col-4"><img src="./Imagenes/logo-bookmark.svg" alt=""></a>
-          <div class="col-4 ">
+          <div class="bg-danger pt-5 col-12 d-flex">
+            <a href="#" class="col-4"><img src="./Imagenes/logo-bookmark.svg" alt=""></a>
+
+            <div class="col-4">
+              <nav><img src="./imagenes/icon-facebook.svg" alt=""></nav>
+              <nav><img src="./imagenes/icon-twitter.svg" alt=""></nav>
+            </div>
           </div>
-          <div class="col-4">
-            <nav><img src="./imagenes/icon-facebook.svg" alt=""></nav>
-            <nav><img src="./imagenes/icon-twitter.svg" alt=""></nav>
-          </div>
-        </div>
-      </div>
-      </footer>
-      <link rel="stylesheet" href="./node_modules/bootstrap/js/dist/tab.js">
-      <link rel="stylesheet" href="./node_modules/bootstrap/js/dist/collapse.js">
-      <link rel="stylesheet" href="./node_modules/bootstrap/js/dist/collapse.js.map">
-      <link rel="stylesheet" href="./node_modules/bootstrap/js/dist/base-component.js">
-      <link rel="stylesheet" href="./node_modules/bootstrap/js/dist/base-component.js.map">
-      <link rel="stylesheet" href="./node_modules/bootstrap/js/src/util/component-functions.js">
+        </footer>
+      <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     </body>
 </html>
