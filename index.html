@@ -13,17 +13,23 @@
             <!-- Barra de navegacion -->
             <nav class="col-12 navbar navbar-expand-md mb-5 pb-5 mt-4">
                 <div class="container">
-                    <a href="#" class="col-6 navbar-brand"><img src="./Imagenes/logo-bookmark.svg" alt=""></a>
+                    <a href="#" class="col-5 navbar-brand"><img src="./Imagenes/logo-bookmark.svg" alt=""></a>
                     <button type="button" class="navbar-toggler"data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
                         <span class="navbar-toggler"><img src="./Imagenes/icon-hamburger.svg" alt=""></span>
                     </button>
                     <div id="MenuNavegacion" class="collapse navbar-collapse">
-                        <ul class="col-6 fs-6 mt-2 navbar-nav texto-secundario">
+                        
+                        <ul class="col-7 fs-6 mt-2 navbar-nav texto-secundario">
                             <li class="nav-item"><a class="nav-link text-black" href="#">FEATURES</a></li>
                             <li class="nav-item"><a class="nav-link text-black mx-4" href="#">PRICING</a></li>
                             <li class="nav-item"><a class="nav-link text-black" href="#">CONTACT</a></li>
                             <li class="nav-item"><a class="nav-link btn btn-secondary px-4 ms-4 text-light" href="#">LOGIN</a></li>
+                          <div>
+                            <img src="./imagenes/icon-facebook.svg" alt="">
+                            <img src="./imagenes/icon-twitter.svg" alt="">
+                          </div>
                         </ul>
+                        
                     </div>
                 </div>
             </nav>
@@ -45,26 +51,26 @@
     <main> 
         <div class="container">        
             <div class="row text-center">
-                <div class="col-12 mt-5">
+                <div class="col-12 col-lg-12 mt-5">
                     <h2 class="mt-5 mx-3">Features</h2> 
                     <p class="texto-secundario mt-4 col-sm-12 col-md-6 col-lg-4"> Our aim is to make it quick and easy for you to acces your favorite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
                 </div>
             </div>
-            <ul class="col-lg-12 col-md-12 nav nav-tabs mt-3 mb-5 justify-content-center">
-                <li class="nav-item ">
-                  <a class="nav-link active py-3 px-4 text-dark" href="#">Simple Bookmarking</a>
+            <ul class="col-lg-12 col-md-12 nav nav-tabs mt-3 mb-5 justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active py-3 px-4 text-dark" id="bookmarking-tab" data-bs-toggle="tab" data-bs-target="#bookmarking" type="button" role="tab" aria-controls="bookmarking" aria-selected="true">Simple Bookmarking</button>
                 </li>
-                <li class="nav-item mx-lg-5 mx-sm-0">
-                  <a class="nav-link py-3 px-4 text-dark" href="#">Speedy Searching</a>
+                <li class="nav-item mx-lg-5 mx-sm-0" role="presentation">
+                  <button class="nav-link py-3 px-4 text-dark" id="speedy-tab" data-bs-toggle="tab" data-bs-target="#speedy" type="button" role="tab" aria-controls="speedy" aria-selected="false">Speedy Searching</button>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link py-3 px-4 text-dark" href="#">Easy Sharing</a>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link py-3 px-4 text-dark" id="easy-tab" data-bs-toggle="tab" data-bs-target="#easy" type="button" role="tab" aria-controls="easy" aria-selected="false">Easy Sharing</button>
                 </li>
             </ul>
         </div>
           <!--Contingut principal 2  -->
-        <div class="container">
-            <div class="row col-lg-12 contenido">
+        <div class="container tab-content" id="myTabContent">
+            <div class="row col-lg-12 contenido tab-pane fade show active" id="bookmarking" role="tabpanel" aria-labelledby="bookmarking-tab">
                 <div class="col-lg-6 col-md-12 col-sm-12 mt-5 divImg2">
                     <img src="./Imagenes/illustration-features-tab-1.svg" alt="">
                 </div>
@@ -73,6 +79,36 @@
                     <p>Organize your bookmarks however you like. Our simple drag-drop interface gives you complete control over how you manage your favourite sites</p>
                     <button class="btn btn-primary">More info</button>
                 </div>                
+            </div>
+            <div class="row col-lg-12 contenido tab-pane fade" id="speedy" role="tabpanel" aria-labelledby="speedy-tab">
+              <div class="col-lg-6 col-md-12 col-sm-12 mt-5 divImg2">
+                  <img src="./imagenes/illustration-features-tab-2.svg" alt="">
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+                  <h2> Intelligent search</h2>
+                  <p>Organize your bookmarks however you like. Our simple drag-drop interface gives you complete control over how you manage your favourite sites</p>
+                  <button class="btn btn-primary">More info</button>
+              </div>                
+            </div>
+            <div class="row col-lg-12 contenido tab-pane fade" id="speedy" role="tabpanel" aria-labelledby="speedy-tab">
+              <div class="col-lg-6 col-md-12 col-sm-12 mt-5 divImg2">
+                  <img src="./imagenes/illustration-features-tab-2.svg" alt="">
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+                  <h2> Intelligent search</h2>
+                  <p>Organize your bookmarks however you like. Our simple drag-drop interface gives you complete control over how you manage your favourite sites</p>
+                  <button class="btn btn-primary">More info</button>
+              </div>                
+            </div>
+            <div class="row col-lg-12 contenido tab-pane fade" id="easy" role="tabpanel" aria-labelledby="easy-tab">
+              <div class="col-lg-6 col-md-12 col-sm-12 mt-5 divImg2">
+                  <img src="./imagenes/illustration-features-tab-3.svg" alt="">
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+                  <h2> Intelligent search</h2>
+                  <p>Organize your bookmarks however you like. Our simple drag-drop interface gives you complete control over how you manage your favourite sites</p>
+                  <button class="btn btn-primary">More info</button>
+              </div>                
             </div>
         </div>
         <!-- cards -->
@@ -134,7 +170,7 @@
                     </button>
                   </h2>
                   <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, debitis incidunt possimus repudiandae magnam atque!</div>
                   </div>
                 </div>
                 <div class="accordion-item">
@@ -144,7 +180,7 @@
                     </button>
                   </h2>
                   <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ea tempora cumque modi, fugit sed.</div>
                   </div>
                 </div>
                 <div class="accordion-item">
@@ -154,7 +190,7 @@
                       </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium vero quibusdam hic velit sapiente temporibus?</div>
                     </div>
                 </div>
             </div> 
@@ -171,25 +207,30 @@
             <p class="text-light">35.000+ ALREADY JOINED</p>
             <h3 class="text-light fs-1"> Stay up-to-date with what<br>we're doing</h3>
           </div>
-          <form action="/action_page.php" class="needs-validation">
-            <div class="mb-5 pb-4 mt-5 d-flex w-50">
-              <input type="email" placeholder="Enter your email adress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div class="valid-feedback">Valid.</div>
-              <div class="invalid-tooltip">Please fill out this field.</div>
-              <button type="submit" class="px-4 py-3 fs-5 btn btn-secondary text-light ms-3 w-50">Contact us</button>
+          <form class="needs-validation" novalidate>
+            <div class="mb-5 pb-4 mt-5 d-flex">
+              <input type="email" placeholder="Enter your email adress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <div class="invalid-feedback">Woops, make sure it's an email</div>
+              <button type="submit" class="px-4 py-3 fs-5 btn btn-secondary text-light ms-3">Contact us</button>
             </div>
             
           </form>
         </div>
-          <div class="bg-danger pt-5 col-12 d-flex">
-            <a href="#" class="col-4"><img src="./Imagenes/logo-bookmark.svg" alt=""></a>
-
-            <div class="col-4">
-              <nav><img src="./imagenes/icon-facebook.svg" alt=""></nav>
+          <div class="bg-danger py-4 col-12 d-flex">
+            <div class="col-lg-8 col-md-7 col-sm-12 d-flex justify-content-start">
+              <a class="col-lg-3 col-md-12 col-sm-12" href="#"><img src="./Imagenes/logo-bookmark.svg" alt=""></a>
+              <nav class="text-light col-lg-2 col-md-12 col-sm-12">FEATURES</nav>
+              <nav class="text-light col-lg-2 col-md-12 col-sm-12">PRICING</nav>
+              <nav class="text-light col-lg-1 col-md-12 col-sm-12">CONTACT</nav>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-12 d-flex justify-content-center">
+              <nav><img class="mx-5" src="./imagenes/icon-facebook.svg" alt=""></nav>
               <nav><img src="./imagenes/icon-twitter.svg" alt=""></nav>
             </div>
           </div>
         </footer>
+        
       <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+      <script src="https://getbootstrap.com/docs/5.0/assets/js/validate-forms.js"></script>
     </body>
 </html>
